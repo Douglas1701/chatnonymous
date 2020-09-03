@@ -4,7 +4,7 @@ const socketIO = require("socket.io");
 const app = express();
 const http = require("http");
 const port = process.env.PORT || 5000;
-const path = require("path");
+let path = require("path");
 //const cors = require("cors");
 
 const roomHandler = require("./scripts/roomHandler");
@@ -114,8 +114,12 @@ app.use((req, res, next) => {
       next();
 });
 
-app.use(express.static("public"));
+app.use(path.join(__dirname, "public"));
 //app.use(cors());
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
+});
 
 // will pass 404 to error handler
 app.use((req, res, next) => {
@@ -132,10 +136,6 @@ app.use((error, req, res, next) => {
       message: error.message || "Internal Server Error",
     },
   });
-});
-
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 server.listen(port, () => console.log(`starting on port ${port}`));
