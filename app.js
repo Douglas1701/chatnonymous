@@ -4,7 +4,7 @@ const socketIO = require("socket.io");
 const app = express();
 const http = require("http");
 const port = process.env.PORT || 5000;
-const cors = require("cors");
+//const cors = require("cors");
 
 const roomHandler = require("./scripts/roomHandler");
 const messageHandler = require("./scripts/messageHandler");
@@ -113,8 +113,8 @@ app.use((req, res, next) => {
       next();
 });
 
-//app.use(express.static("public"));
-app.use(cors());
+app.use(express.static("public"));
+//app.use(cors());
 
 // will pass 404 to error handler
 app.use((req, res, next) => {

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.69eda509.chunk.css",
+    "main.js": "/static/js/main.f4e97446.chunk.js",
+    "main.js.map": "/static/js/main.f4e97446.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ef25a298.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ef25a298.js.map",
+    "static/js/2.fb5de2a7.chunk.js": "/static/js/2.fb5de2a7.chunk.js",
+    "static/js/2.fb5de2a7.chunk.js.map": "/static/js/2.fb5de2a7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3b838b9541d0e3fb6cef147ac630e657.js": "/precache-manifest.3b838b9541d0e3fb6cef147ac630e657.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.fb5de2a7.chunk.js.LICENSE.txt": "/static/js/2.fb5de2a7.chunk.js.LICENSE.txt",
+    "static/media/Chatnonymous_Dark.png": "/static/media/Chatnonymous_Dark.f834275c.png",
+    "static/media/Chatnonymous_Icon.png": "/static/media/Chatnonymous_Icon.6e10b6c1.png",
+    "static/media/Chatnonymous_Text.png": "/static/media/Chatnonymous_Text.cc20713e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef25a298.js",
+    "static/js/2.fb5de2a7.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.f4e97446.chunk.js"
+  ]
+}
