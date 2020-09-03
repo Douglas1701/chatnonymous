@@ -4,6 +4,7 @@ const socketIO = require("socket.io");
 const app = express();
 const http = require("http");
 const port = process.env.PORT || 5000;
+const path = require("path");
 //const cors = require("cors");
 
 const roomHandler = require("./scripts/roomHandler");
@@ -131,6 +132,10 @@ app.use((error, req, res, next) => {
       message: error.message || "Internal Server Error",
     },
   });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
 server.listen(port, () => console.log(`starting on port ${port}`));
