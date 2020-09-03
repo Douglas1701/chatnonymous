@@ -135,7 +135,7 @@ app.use((error, req, res, next) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/build/index.html"));
+  res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 server.listen(port, () => console.log(`starting on port ${port}`));
