@@ -114,7 +114,7 @@ app.use((req, res, next) => {
       next();
 });
 
-app.use(path.join(__dirname, "public"));
+app.use(express.static(path.join(__dirname, "public")));
 //app.use(cors());
 
 app.get("*", (req, res) => {
