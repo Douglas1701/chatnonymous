@@ -9,4 +9,4 @@ This is the back-end server logic for the Chatnonymous app.
 
 ## Demo
 http://chatnonymous-app.herokuapp.com/
-** Note: It might take a few seconds to start up for the first time as it may be on sleep mode **
+**Note: It might take a few seconds to start up for the first time as it may be on sleep mode**
