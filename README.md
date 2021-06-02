@@ -5,7 +5,7 @@ This is the back-end server logic for the Chatnonymous app.
 - Javascript
 - NodeJS
 - ExpressJS
-- WebSocket
+- WebSocket (Socket IO)
 
 ## Demo
 http://chatnonymous-app.herokuapp.com/
