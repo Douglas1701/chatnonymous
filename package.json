@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Douglas1701/chatnonymous/issues"
   },
-  "homepage": "https://github.com/Douglas1701/chatnonymous#readme",
+  "homepage": "https://chatnonymous-service.onrender.com",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
