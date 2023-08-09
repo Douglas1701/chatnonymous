@@ -103,18 +103,19 @@ app.enable('trust proxy');
 // Add a handler to inspect the req.secure flag (see
 // http://expressjs.com/api#req.secure). This allows us
 // to know whether the request was via http or https.
-app.use((req, res, next) => {
-	req.secure
-		? // request was via https, so do no special handling
-		  res.redirect('http://' + req.headers.host + req.url)
-		: // request was via http, so redirect to https
-		  next();
-});
+// app.use((req, res, next) => {
+// 	req.secure
+// 		? // request was via https, so do no special handling
+// 		  res.redirect('http://' + req.headers.host + req.url)
+// 		: // request was via http, so redirect to https
+// 		  next();
+// });
 
 app.use(express.static(path.join(__dirname, 'public')));
 //app.use(cors());
 
 app.get('*', (req, res) => {
+	console.log('GET AND SEND');
 	res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
