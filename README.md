@@ -8,5 +8,5 @@ This is the back-end server logic for the Chatnonymous app.
 - WebSocket (Socket IO)
 
 ## Demo
-[http://chatnonymous-app.herokuapp.com/](https://chatnonymous.fly.dev/)
+https://chatnonymous.fly.dev/
 **Note: It might take a few seconds to start up for the first time as it may be on sleep mode**
